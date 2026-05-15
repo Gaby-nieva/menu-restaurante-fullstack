@@ -14,7 +14,7 @@ const Main = () => {
   const [mostrarModal, setMostrarModal] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/products")
+    fetch("https://menu-restaurante-fullstack.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
@@ -247,7 +247,7 @@ const Main = () => {
 
 
                       const response = await fetch(
-                        "http://localhost:3000/api/orders",
+                        "https://menu-restaurante-fullstack.onrender.com/api/orders",
                         {
                           method: "POST",
                           headers: {
