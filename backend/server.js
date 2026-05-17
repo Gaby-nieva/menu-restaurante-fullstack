@@ -12,7 +12,9 @@ const app = express();
 
 // MIDDLEWARES
 
-app.use(cors());
+app.use(cors({
+  origin: "https://menu-restaurante-fullstack.netlify.app"
+}));
 app.use(express.json());
 app.use("/api/products", productRoutes);
 app.use("/api/auth", authRoutes);
