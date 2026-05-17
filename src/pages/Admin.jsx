@@ -17,7 +17,7 @@ const Admin = () => {
 
   const obtenerProductos = () => {
 
-    fetch("http://localhost:3000/api/products")
+    fetch("https://menu-restaurante-fullstack.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
@@ -27,7 +27,7 @@ const Admin = () => {
 
   const obtenerPedidos = () => {
 
-    fetch("http://localhost:3000/api/orders")
+    fetch("https://menu-restaurante-fullstack.onrender.com/api/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data))
       .catch((err) => console.log(err));
@@ -47,7 +47,7 @@ const Admin = () => {
     try {
 
       await fetch(
-        `http://localhost:3000/api/products/${id}`,
+        `https://menu-restaurante-fullstack.onrender.com/api/products/${id}`,
         {
           method: "DELETE",
         }
@@ -68,7 +68,7 @@ const Admin = () => {
     try {
 
       await fetch(
-        `http://localhost:3000/api/products/${id}`,
+        `https://menu-restaurante-fullstack.onrender.com/api/products/${id}`,
         {
           method: "PUT",
 
@@ -100,7 +100,7 @@ const Admin = () => {
     try {
 
       await fetch(
-        `http://localhost:3000/api/orders/${id}/status`,
+        `https://menu-restaurante-fullstack.onrender.com/api/orders/${id}/status`,
         {
           method: "PUT",
 
@@ -136,7 +136,7 @@ const Admin = () => {
     try {
 
       await fetch(
-        `http://localhost:3000/api/orders/${id}`,
+        `https://menu-restaurante-fullstack.onrender.com/api/orders/${id}`,
         {
           method: "DELETE",
         }
@@ -157,7 +157,7 @@ const Admin = () => {
     try {
 
       await fetch(
-        "http://localhost:3000/api/products",
+        "https://menu-restaurante-fullstack.onrender.com/api/products",
         {
           method: "POST",
 

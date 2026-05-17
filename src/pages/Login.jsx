@@ -21,7 +21,7 @@ const Login = () => {
     try {
 
       const response = await fetch(
-        "http://localhost:3000/api/auth/login",
+        "https://menu-restaurante-fullstack.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {
